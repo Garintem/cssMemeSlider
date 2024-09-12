@@ -13,16 +13,34 @@ body {
   color: #F8F7F4;
 }
 .wrapper {
-  width: 55rem;
+  width: 55vw;
   padding: 3% 3% 3% 3%;
   border-radius: 1.5rem;
   background-color: #363636;
 }
 img {
-  width: 55rem;
-  height: 35rem;
+  /*max-width: 75rem;
+  max-height: 65rem;*/
   border-radius: 1.5rem;
 }
+/*#img_1>div {
+  background-image: url(Img_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#img_2>div {
+  background-image: url(Img_2.jpg);
+  background-size: cover;
+}
+#img_3>div {
+  background-image: url(Img_3.jpg);
+  background-size: cover;
+}
+#img_4>div {
+  background-image: url(Img_4.jpg);
+  background-size: cover;
+}*/
+
 .slide {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -41,6 +59,7 @@ img {
 }
 input {
   margin-top: -3%;
+  cursor: pointer;
 }
 label {
   margin-top: 3%;
