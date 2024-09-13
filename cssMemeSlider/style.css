@@ -9,7 +9,7 @@ body {
   margin: 0;
   background-color: #F8F7F4;
   font-family: "Verdana", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #F8F7F4;
 }
 .wrapper {
@@ -23,23 +23,6 @@ img {
   max-height: 65rem;*/
   border-radius: 1.5rem;
 }
-/*#img_1>div {
-  background-image: url(Img_1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#img_2>div {
-  background-image: url(Img_2.jpg);
-  background-size: cover;
-}
-#img_3>div {
-  background-image: url(Img_3.jpg);
-  background-size: cover;
-}
-#img_4>div {
-  background-image: url(Img_4.jpg);
-  background-size: cover;
-}*/
 
 .slide {
   display: flex;
@@ -47,6 +30,7 @@ img {
   overflow: hidden;
   justify-content: flex-end;
   border-radius: 1.5rem 1.5rem 0 0;
+  padding: 1rem 0;
 }
 .img {
   display: flex;
@@ -58,11 +42,34 @@ img {
   flex-direction: column;
 }
 input {
-  margin-top: -3%;
-  cursor: pointer;
+  display: none;
 }
 label {
-  margin-top: 3%;
+	display: inline-block;
+	cursor: pointer;
+  width: 0.7rem;
+  height: 0.7rem;
+	border: 1px solid #CB504C;
+  background: #CB504C;
+  border-radius: 100%;
+  margin-left: 0.5rem;
+}
+label:hover {
+  background: #F8F7F4;
+}
+label:active {
+  border-color: #F8F7F4;
+}
+input[type=radio]:checked + label {
+  border-color: #F8F7F4;
+  background: none;	
+}
+input[type=radio]:checked + label:hover {
+  border-color: #CB504C;
+}
+.title-slide {
+  margin-top: 0.6rem;
+  margin-bottom: -1rem;
 }
 
 #button_1:checked ~ .img #img_1 {
