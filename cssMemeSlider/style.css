@@ -30,7 +30,7 @@ img {
   overflow: hidden;
   justify-content: flex-end;
   border-radius: 1.5rem 1.5rem 0 0;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 .img {
   display: flex;
@@ -49,7 +49,7 @@ label {
 	cursor: pointer;
   width: 0.7rem;
   height: 0.7rem;
-	border: 1px solid #CB504C;
+	border: 0.2rem solid #363636;
   background: #CB504C;
   border-radius: 100%;
   margin-left: 0.5rem;
@@ -58,14 +58,13 @@ label:hover {
   background: #F8F7F4;
 }
 label:active {
-  border-color: #F8F7F4;
+  background: grey;
 }
 input[type=radio]:checked + label {
-  border-color: #F8F7F4;
-  background: none;	
+  background: #F8F7F4;	
 }
 input[type=radio]:checked + label:hover {
-  border-color: #CB504C;
+  background: #BFBFBF;
 }
 .title-slide {
   margin-top: 0.6rem;
@@ -85,4 +84,32 @@ input[type=radio]:checked + label:hover {
   margin-left: 0;
 }
 
-
+@media screen and (max-width: 500px){
+  .wrapper {
+    padding-bottom: 6%;
+    width: 70vw;
+  }
+  .title-slide {
+    margin-top: 2.5rem;
+    margin-bottom: -3rem;
+  }
+  label {
+    margin-bottom: 0.5rem;
+  }
+  #button_1 + label {
+    margin-right: 41%;
+  }
+  #button_2 + label {
+    margin-right: 36%;
+    margin-left: -38%;
+  }
+  #button_3 + label {
+    margin-right: 35%;
+    margin-left: -33%;
+  }
+  #button_4 + label {
+    margin-right: 35%;
+    margin-left: -32%;
+  }
+  
+}
