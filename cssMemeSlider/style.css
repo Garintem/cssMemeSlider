@@ -9,7 +9,7 @@ body {
   margin: 0;
   background-color: #F8F7F4;
   font-family: "Verdana", sans-serif;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   color: #F8F7F4;
 }
 .wrapper {
@@ -19,8 +19,6 @@ body {
   background-color: #363636;
 }
 img {
-  /*max-width: 75rem;
-  max-height: 65rem;*/
   border-radius: 1.5rem;
 }
 
